@@ -1,2 +1,2 @@
-export * from './dateHandler';
-export * from './slug-utils'
+export * from "./dateHandler";
+export * from "./slug-utils";

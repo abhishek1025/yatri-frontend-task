@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { ReactEventHandler, ReactNode } from 'react';
-import { twMerge } from 'tailwind-merge';
+import { ReactEventHandler, ReactNode } from "react";
+import { twMerge } from "tailwind-merge";
 
 type ButtonPropsType = {
   children: ReactNode;
@@ -20,14 +20,14 @@ export default function Button({
     <div>
       <button
         className={twMerge(
-          `px-4 py-2 rounded-3xl bg-primary-600 text-white ${disabled ? 'cursor-not-allowed' : ''}`,
-          className
+          `px-4 py-2 rounded-3xl bg-primary-600 text-white ${disabled ? "cursor-not-allowed" : ""}`,
+          className,
         )}
         onClick={onClick}
-        disabled={disabled}>
+        disabled={disabled}
+      >
         {children}
       </button>
     </div>
   );
 }
-

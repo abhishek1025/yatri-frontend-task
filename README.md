@@ -110,14 +110,18 @@ export type BlogType = {
   upVotes: string;
   downVotes: string;
   summary: string;
-}
+};
 ```
-
 
 ## API Response Structure
 
-### 1. Fetch All Blogs (**GET** ```/api/blogs?page=&limit=&searchText=```)
+### 1. Fetch All Blogs (**GET** `/api/blogs?page=&limit=&searchText=`)
 
+- \*Description:\*\* Retrieves a paginated list of blog posts.
+- **Query Parameters:**
+  - `page` (number) – The page number for pagination.
+  - `limit` (number) – The number of blog posts per page.
+  - `searchText` (string, optional) – Filters blogs based on the title.
 - **Response Structure:**
 
 ```json
@@ -133,11 +137,10 @@ export type BlogType = {
 }
 ```
 
-### 2. Fetch Blog Details ( **GET** ```/api/blogs/:blogId```)
+### 2. Fetch Blog Details ( **GET** `/api/blogs/:blogId`)
 
 - **Description:** Retrieves details of a single blog post by its `blogId`.
-
-#### **Response Structure:**
+- **Response Structure:**
 
 ```json
 {
@@ -145,4 +148,5 @@ export type BlogType = {
   "data": BLOG_DETAILS
 }
 ```
+
 ---

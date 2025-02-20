@@ -1,4 +1,4 @@
-import { JSX } from 'react';
+import { JSX } from "react";
 
 export default async function Await<T>({
   promise,
@@ -15,11 +15,13 @@ export default async function Await<T>({
     }
     return children(data);
   } catch (error) {
-
     const errMessage =
-        error instanceof Error ? error.message : "Unexpected Error occurred. Please try again later";
+      error instanceof Error
+        ? error.message
+        : "Unexpected Error occurred. Please try again later";
 
-    return <div className="p-4 text-white bg-red-600 rounded"> {errMessage} </div>;
+    return (
+      <div className="p-4 text-white bg-red-600 rounded"> {errMessage} </div>
+    );
   }
 }
-
