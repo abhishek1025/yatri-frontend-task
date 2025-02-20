@@ -6,7 +6,7 @@ This project is a dynamic blog platform that retrieves blog data from a Next.js 
 
 ## Live Demo
 
-🔗 **Live Site:** [Your Live Link Here](#)
+🔗 **Live Site:** [LIVE](https://yatri-frontend-task.vercel.app/)
 
 ## Technologies Used
 
