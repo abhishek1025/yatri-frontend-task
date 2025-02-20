@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Assignment for Frontend Developer (Intern/Junior) at Yatri Design Studio Pvt. Ltd.
 
-## Getting Started
+## Overview
+This project is a dynamic blog platform that retrieves blog data from a Next.js Server API and presents it in a responsive layout. Users can browse a list of blog posts, each featuring a title, summary, and date. Clicking on a post redirects them to a dedicated blog details page for an in-depth reading experience.
 
-First, run the development server:
+## Live Demo
+🔗 **Live Site:** [Your Live Link Here](#)
+
+## Technologies Used
+- **Next.js**: Utilized for server-side rendering, routing, and API handling.
+- **Tailwind CSS**: Provides responsive and utility-first styling.
+- **React**: Enables component-based UI development for a dynamic user experience.
+- **TypeScript**: Ensures type safety and improves maintainability.
+- **Unsplash API**: Supplies mock image data via `next/image` for a visually appealing blog experience.
+>
+## Installation
+To run the project locally, follow these steps:
 
 ```bash
+# Clone the repository
+git clone https://github.com/abhishek1025/yatri-frontend-task
+
+# Navigate to the project directory
+cd yatri-frontend-task
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Implementation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 1. Homepage (Blog List Page)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Fetches and displays blog posts from a ``` /api/blogs?page=&limit&searchText=```
+- Each post includes a **title, summary, and date**.
+- Clicking a post redirects the user to the **blog detail page**.
+- Implements **loading states** using a **skeleton UI**.
+- Posts are displayed in a **responsive grid layout** using Tailwind CSS.
 
-## Learn More
+![Blog List Page Screenshot](./screenshots/1.png)
+![Blog List Page Screenshot](./screenshots/2.png)
+![Blog List Page Screenshot](./screenshots/3.png)
+![Blog List Page Screenshot](./screenshots/4.png)
+![Blog List Page Screenshot](./screenshots/5.png)
+![Blog List Page Screenshot](./screenshots/6.png)
+![Blog List Page Screenshot](./screenshots/7.png)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2. Blog Post Detail Page
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Dynamic route (`/blog/[slug]`) for each blog post.
+- Displays **full blog content, title, and date of creation**.
+- Implements **loading states** using a **skeleton UI**.
 
-## Deploy on Vercel
+![Blog Details Page Screenshot](./screenshots/8.png)
+![Blog Details Page Screenshot](./screenshots/9.png)
+![Blog Details Page Screenshot](./screenshots/10.png)
+![Blog Details Page Screenshot](./screenshots/11.png)
+![Blog Details Page Screenshot](./screenshots/12.png)
+![Blog Details Page Screenshot](./screenshots/13.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 3. Search Functionality
+
+- **Real-time filtering** of blog posts by title.
+- Search is **case-insensitive**.
+- Implements **debounce** for better performance.
+- Shows **"No posts found"** if no results match.
+
+![Search Functionality Screenshot](./screenshots/14.png)
+![Search Functionality Screenshot](./screenshots/15.png)
+![Search Functionality Screenshot](./screenshots/16.png)
+
+
+### 4. Pagination
+
+- Displays **6 posts per page**.
+- Allows users to navigate between pages for a better browsing experience.
+- 
+![Pagination Screenshot](./screenshots/17.png)
+![Pagination Screenshot](./screenshots/18.png)
+![Pagination Screenshot](./screenshots/19.png)
+![Pagination Screenshot](./screenshots/20.png)
+
+
+
+### 5. Error Handling (Bonus)
+- Shows an error message if ** data fetching fails, returns null, or the server is unreachable **.
+  
+![Error Handling Screenshot](./screenshots/21.png)
+![Error Handling Screenshot](./screenshots/22.png)
+![Error Handling Screenshot](./screenshots/23.png)
+
+
+
+---
