@@ -1,3 +1,5 @@
+"use client"
+
 import { BlogType} from "@/types";
 import { formatDate } from '@/utils';
 import Image from 'next/image';

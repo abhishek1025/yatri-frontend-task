@@ -2,7 +2,7 @@ import Await from '@/components/Await';
 import {BlogList} from '@/components/blog';
 import {Suspense} from 'react';
 import {v4 as uuid} from 'uuid';
-import {BlogListLoading} from "@/components/ui/loaders"
+import {BlogListLoader} from "@/components/ui/loaders"
 
 async function fetchBlogs({
                               searchText = '',
@@ -46,7 +46,7 @@ export default async function Home(props: {
 
     return (
         <div key={uuid()}>
-            <Suspense fallback={<BlogListLoading/>}>
+            <Suspense fallback={<BlogListLoader/>}>
                 <Await promise={blogs}>{data => <BlogList {...data} />}</Await>
             </Suspense>
         </div>

@@ -1,6 +1,6 @@
 "use client"
 
-export default function BlogListLoading(){
+export default function BlogListLoader(){
 
   return (
     <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 py-8'>

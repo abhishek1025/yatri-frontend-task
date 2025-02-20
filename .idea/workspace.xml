@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59fbd88e-c731-4226-bf19-a168177aa769" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/loaders/BlogDetailsLoader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/blog/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/blog/[slug]/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blog/BlogCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog/BlogCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blog/BlogDetails.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blog/BlogDetails.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/DesktopNavbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/DesktopNavbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/HamburgerMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/HamburgerMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/loaders/BlogListLoading.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/loaders/BlogListLoader.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/loaders/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/loaders/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/blogs.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/blogs.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1740070415342</updated>
       <workItem from="1740070416993" duration="1387000" />
-      <workItem from="1740072087332" duration="1691000" />
+      <workItem from="1740072087332" duration="3034000" />
     </task>
     <servers />
   </component>

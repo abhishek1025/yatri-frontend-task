@@ -4,7 +4,7 @@ import {BlogDetails} from "@/components/blog";
 import {Suspense} from 'react';
 import {v4 as uuid} from 'uuid';
 import Await from "@/components/Await";
-import BlogDetailsLoader from "@/components/ui/loaders/BlogDetailsLoader";
+import {BlogDetailsLoader} from "@/components/ui/loaders";
 
 async function fetchBlogById(slug: string) {
     try {

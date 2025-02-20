@@ -53,9 +53,7 @@ export default function HamburgerMenu() {
           </ul>
 
           <div className='p-4'>
-            <Link href='/'>
               <Button className='w-full py-3'>Get Started</Button>
-            </Link>
           </div>
         </div>
       </div>

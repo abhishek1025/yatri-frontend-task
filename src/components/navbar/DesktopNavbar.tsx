@@ -1,3 +1,5 @@
+"use client"
+
 import Link from 'next/link';
 import { Button, NavBarSearchBox } from '../ui';
 import HamburgerMenu from './HamburgerMenu';
@@ -32,9 +34,7 @@ export default function NavBar() {
           </div>
 
           <div>
-            <Link href='/'>
               <Button className='w-full py-2'>Get Started</Button>
-            </Link>
           </div>
         </div>
 
