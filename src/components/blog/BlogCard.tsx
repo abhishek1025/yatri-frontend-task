@@ -3,10 +3,9 @@
 import { BlogType } from "@/types";
 import { formatDate, generateSlug } from "@/utils";
 import Image from "next/image";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { BiSolidUpvote } from "react-icons/bi";
 import { CiBookmarkPlus, CiShare1 } from "react-icons/ci";
-import { useRouter } from "next/navigation";
 
 type BlogCardTypes = {
   blog: BlogType;
