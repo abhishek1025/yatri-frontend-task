@@ -3,7 +3,7 @@
 import { BlogType } from "@/types";
 import { formatDate, generateSlug } from "@/utils";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { BiSolidUpvote } from "react-icons/bi";
 import { CiBookmarkPlus, CiShare1 } from "react-icons/ci";
 
@@ -12,8 +12,6 @@ type BlogCardTypes = {
 };
 
 export default function BlogCard({ blog }: BlogCardTypes) {
-  const router = useRouter();
-
   return (
     <div>
       <div className="border p-5 rounded space-y-5">
@@ -29,31 +27,30 @@ export default function BlogCard({ blog }: BlogCardTypes) {
           <p>{blog.author}</p>
         </div>
 
-        {/* Blog details */}
-        <div
-          className="flex gap-x-4 items-center"
-          onClick={() => {
-            router.push(`blog/${generateSlug(blog.title, blog.id)}`);
-          }}
-        >
-          <div className="space-y-4 flex-1">
-            <h1 className="text-xl lg:text-2xl font-bold line-clamp-2">
-              {blog.title}
-            </h1>
-            <p className="text-gray-500 line-clamp-2">{blog.summary}</p>
-          </div>
+        <div>
+          <Link href={`blog/${generateSlug(blog.title, blog.id)}`}>
+            {/* Blog details */}
+            <div className="flex gap-x-4 items-center">
+              <div className="space-y-4 flex-1">
+                <h1 className="text-xl lg:text-2xl font-bold line-clamp-2">
+                  {blog.title}
+                </h1>
+                <p className="text-gray-500 line-clamp-2">{blog.summary}</p>
+              </div>
 
-          <div className="w-[20%]">
-            <Image
-              src={blog.coverImg}
-              alt={blog.title}
-              width={0}
-              height={0}
-              sizes="100vw"
-              style={{ width: "100%", height: "auto" }}
-              className="object-contain"
-            />
-          </div>
+              <div className="w-[20%]">
+                <Image
+                  src={blog.coverImg}
+                  alt={blog.title}
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: "100%", height: "auto" }}
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </Link>
         </div>
 
         <div className="flex justify-between items-center text-gray-600">
