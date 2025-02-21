@@ -1,10 +1,9 @@
 "use client";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { Button, NavBarSearchBox } from "../ui";
-import Logo from "../Logo";
 import { usePathname } from "next/navigation";
-import { Suspense } from "react";
+import { Suspense, useEffect, useState } from "react";
+import Logo from "../Logo";
+import { NavBarSearchBox } from "../ui";
 
 export default function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
