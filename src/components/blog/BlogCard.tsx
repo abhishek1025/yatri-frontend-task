@@ -5,7 +5,8 @@ import { formatDate, generateSlug } from "@/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { BiSolidUpvote } from "react-icons/bi";
-import { CiBookmarkPlus, CiShare1 } from "react-icons/ci";
+import { AddToFavoriteBtns } from "@/components/ui";
+import { CiShare1 } from "react-icons/ci";
 
 type BlogCardTypes = {
   blog: BlogType;
@@ -72,7 +73,8 @@ export default function BlogCard({ blog }: BlogCardTypes) {
 
           <div className="text-2xl flex gap-x-5 item-center">
             <CiShare1 />
-            <CiBookmarkPlus />
+
+            <AddToFavoriteBtns blog={blog} />
           </div>
         </div>
       </div>

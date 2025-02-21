@@ -5,7 +5,8 @@ import { formatDate } from "@/utils";
 import Image from "next/image";
 
 import { BiSolidUpvote } from "react-icons/bi";
-import { CiBookmarkPlus, CiShare1 } from "react-icons/ci";
+import { CiShare1 } from "react-icons/ci";
+import { AddToFavoriteBtns } from '@/components/ui';
 
 export default function BlogDetails({ blog }: { blog: BlogType }) {
   return (
@@ -45,7 +46,7 @@ export default function BlogDetails({ blog }: { blog: BlogType }) {
 
         <div className="text-2xl flex gap-x-5 item-center">
           <CiShare1 />
-          <CiBookmarkPlus />
+          <AddToFavoriteBtns blog={blog} />
         </div>
       </div>
 
@@ -71,3 +72,4 @@ export default function BlogDetails({ blog }: { blog: BlogType }) {
     </div>
   );
 }
+

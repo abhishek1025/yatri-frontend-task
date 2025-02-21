@@ -4,13 +4,10 @@
 
 /* hamburger menu */
 .hamburger-button {
-  font-size: 30px;
+  font-size: 40px;
   cursor: pointer;
   background: none;
   border: none;
-  top: 20px;
-  left: 20px;
-  z-index: 1000;
 }
 
 .overlay {

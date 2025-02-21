@@ -29,13 +29,13 @@ export default function HamburgerMenu() {
           }`}
         >
           <button
-            className="close-button absolute right-4 top-4 font-bold z-40"
+            className="text-3xl close-button absolute right-4 top-4 font-bold z-40"
             onClick={closeMenu}
           >
             ✕
           </button>
 
-          <div className="menu-header p-4 space-y-5">
+          <div className="menu-header p-4 space-y-7">
             <Logo />
 
             <Suspense fallback={<p>Loading search params...</p>}>
@@ -56,10 +56,6 @@ export default function HamburgerMenu() {
               <Link href="/">About Us</Link>
             </li>
           </ul>
-
-          <div className="p-4">
-            <Button className="w-full py-3">Get Started</Button>
-          </div>
         </div>
       </div>
     </div>

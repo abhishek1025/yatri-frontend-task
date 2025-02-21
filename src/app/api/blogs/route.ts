@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import blogs from "@/data/blogs.json";
 
-// GET /blogs - to fetch all blogs
+// GET /favorite-blogs - to fetch all favorite-blogs
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
   const searchText = searchParams.get("searchText") || "";

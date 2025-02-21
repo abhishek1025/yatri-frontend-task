@@ -1,29 +1,32 @@
 import blogs from "@/data/blogs.json";
+import { generateSlug } from "@/utils";
 import { NextResponse } from "next/server";
 
-// GET /blogs/[id] - to fetch all blogs
+// GET /favorite-blogs/[id] - to fetch all favorite-blogs
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function GET(request: Request, context: any) {
   const { params } = context;
-  const blogId = params.id;
+  const slug = params.slug;
 
   // Adding delay to make it realtime API request
   await new Promise((resolve) => {
     setTimeout(resolve, 2000);
   });
 
-  if (!blogId) {
+  if (!slug) {
     return NextResponse.json(
       {
-        message: "Invalid blog ID",
+        message: 'Invalid blog ID',
       },
       {
         status: 400,
-      },
+      }
     );
   }
 
-  const blog = blogs.find((blog) => blog.id === parseInt(blogId));
+
+
+  const blog = blogs.find((blog) => generateSlug(blog.title, blog.id.toString()) === slug);
 
   if (!blog) {
     return NextResponse.json(
@@ -41,3 +44,5 @@ export async function GET(request: Request, context: any) {
     data: blog,
   });
 }
+
+

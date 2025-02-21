@@ -8,9 +8,8 @@ import { v4 as uuid } from "uuid";
 
 async function fetchBlogById(slug: string) {
   try {
-    const blogId = extractIdFromSlug(slug);
 
-    const res = await fetch(`${process.env.NEXT_API_BASE_URL}/blogs/${blogId}`);
+    const res = await fetch(`${process.env.NEXT_API_BASE_URL}/blogs/${slug}`);
 
     if (!res.ok) {
       throw new Error("Unexpected Error occurred. Please try again later.");
@@ -46,3 +45,4 @@ export default async function BlogDetailsPage({
     </div>
   );
 }
+
