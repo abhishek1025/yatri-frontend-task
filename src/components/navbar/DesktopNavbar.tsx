@@ -6,7 +6,7 @@ import HamburgerMenu from "./HamburgerMenu";
 import Logo from "../Logo";
 import { Suspense } from "react";
 import Image from "next/image";
-import { IoIosNotificationsOutline } from "react-icons/io";
+import { MdFavoriteBorder } from "react-icons/md";
 import { useAppSelector } from "@/store/hooks";
 
 export default function NavBar() {
@@ -71,15 +71,16 @@ function NotificationIcon() {
 
   return (
     <div>
-      <Link href="/favorite-blogs">
-        <div className="text-4xl relative">
-          <div className="absolute -top-2 left-4 text-[13px] bg-red-500 text-white rounded-full h-[20px] px-[7px] flex justify-center items-center">
+      <Link href='/favorite-blogs'>
+        <div className='text-3xl relative'>
+          <div className='absolute -top-2 left-4 text-[12px] bg-red-500 text-white rounded-full h-[20px] px-[7px] flex justify-center items-center'>
             {favoriteBlogs.length}
           </div>
 
-          <IoIosNotificationsOutline />
+          <MdFavoriteBorder />
         </div>
       </Link>
     </div>
   );
 }
+
